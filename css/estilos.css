@@ -1,0 +1,662 @@
+/* ================= HERO ================= */
+
+.hero-section {
+  min-height: 100vh;      
+  width: 100%;
+  display: flex;
+  align-items: center;    
+  justify-content: center;
+  padding-top: 70px;      
+  background: radial-gradient(
+      circle at top,
+      rgba(220, 38, 38, 0.12),
+      transparent 60%
+    ),
+    linear-gradient(135deg, #0f172a, #020617);
+  color: #ffffff;
+}
+
+.hero-section h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #dc2626;
+  margin: 20px auto 0;
+  border-radius: 10px;
+}
+
+.hero-section .lead {
+  color: #e5e7eb;
+  font-size: 1.1rem;
+}
+.hero-logo {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  filter: drop-shadow(0 10px 25px rgba(220,38,38,0.35));
+}
+
+@media (max-width: 768px) {
+  .hero-logo {
+    max-width: 160px;
+  }
+}
+.hero-section {
+  scroll-margin-top: 0;
+}
+
+
+/* ================= NOSOTROS ================= */
+
+.nosotros-section {
+  background: #f8fafc; 
+}
+
+.nosotros-box {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(15, 23, 42, 0.08); 
+  box-shadow: 
+    0 20px 40px rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+#nosotros h2 {
+  color: #111827;
+  position: relative;
+}
+
+#nosotros h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #dc2626;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+/* ================= ZONAS ================= */
+.areas-section {
+  background: #020617; 
+  color: #ffffff;
+}
+
+.areas-section h2 {
+  position: relative;
+}
+
+.areas-section h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #dc2626;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+
+/* ================= AREA CARD ================= */
+.areas-contacto-section {
+  background: linear-gradient(180deg, #020617, #020617);
+  padding: 80px 0;
+  color: #ffffff;
+}
+
+.areas-block {
+  margin-bottom: 70px;
+}
+
+.contacto-block {
+  text-align: center;
+}
+
+.contacto-block::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: rgba(255,255,255,0.15);
+  margin: 0 auto 50px;
+}
+.area-card {
+  display: block;
+  background: #f8fafc;
+  padding: 35px 25px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #020617;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  transition: all 0.35s ease;
+  height: 100%;
+  border: 2px solid transparent;
+}
+
+.area-card:hover {
+  transform: translateY(-10px);
+  border-color: #dc2626;
+  box-shadow: 0 25px 50px rgba(220,38,38,0.35);
+}
+.area-icon {
+  font-size: 64px;       
+  margin-bottom: 18px;
+  display: inline-block;
+  line-height: 1;
+}
+
+
+/* ================= BOTONES ================= */
+
+.btn-danger {
+  background-color: #dc2626;
+  border: none;
+  box-shadow: 0 10px 25px rgba(220,38,38,0.4);
+}
+.contact-section h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #dc2626;
+  display: block;
+  margin: 14px auto 0;
+  border-radius: 10px;
+}
+
+.contact-subtitle {
+  color: #0d0d0d;
+  font-size: 1rem;
+}
+
+.contact-info p {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.contact-info strong {
+  color: #fca5a5;
+}
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(37,211,102,0.4);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-4px);
+}
+.email-icon {
+  color: #38bdf8; /* azul moderno */
+}
+.email-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(14,165,233,0.45);
+  transition: all 0.3s ease;
+  margin-left: 12px;
+}
+
+.email-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(14,165,233,0.6);
+}
+.legal-text {
+  font-size: 0.8rem;
+  color: #94a3b8; /* gris elegante */
+  opacity: 0.85;
+}
+.legal-text {
+  margin-top: 35px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  font-size: 0.8rem;
+  color: #cbd5f5;
+  opacity: 0.8;
+}
+
+
+/* ================= EQUIPOS ================= */
+
+.equipo-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.equipo-card {
+  min-height: 420px;
+}
+/* ================= BOTON BURBUJA VOLVER ================= */
+
+.back-bubble {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  width: 55px;
+  height: 55px;
+  background: #cf1d34;
+  color: #f7f5f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(216, 201, 201, 0.45);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.back-bubble:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 18px 40px rgba(220,38,38,0.6);
+  color: #f5f4f4;
+}
+/*================== BORDES IMAGENES DE EQUIPOS ================*/
+.area-card img {
+  border-radius: 16px;          
+  border: 2px solid #e5e7eb;    
+  padding: 6px;                
+  background: #ffffff;         
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.area-card:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+/*================ PAGINA CANON C256 ==================*/
+.ficha-equipo li {
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.ficha-equipo b {
+  color: #0d6efd;
+}
+
+
+
+.equipo-link {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.equipo-link h5,
+.equipo-link p {
+  text-decoration: none;
+}
+
+/*eliminar lineas azules */
+/* Quitar subrayado azul de los enlaces dentro de las cards */
+.area-card a,
+.area-card a:hover,
+.area-card a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.back-bubble {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  width: 55px;
+  height: 55px;
+  background: #cf1d34;
+  color: #f7f5f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(216, 201, 201, 0.45);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.back-bubble:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 18px 40px rgba(220,38,38,0.6);
+  color: #f5f4f4;
+}
+
+.carousel-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* altura uniforme */
+}
+
+.carousel-img-wrapper img {
+  max-height: 260px;
+  max-width: 420px;
+  object-fit: contain;
+}
+.carousel-img-wrapper img {
+  max-height: 240px;
+}
+/* ================= CARRUSEL REPUESTOS ================= */
+
+/* ======= FIX DEFINITIVO CARRUSEL ======= */
+
+/* FUERZA centrado real */
+/* boton volver*/
+.back-bubble {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+
+  width: 60px;
+  height: 60px;
+
+  background: #000000; /* NEGRO para verla sí o sí */
+  color: #ffffff;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+
+  z-index: 99999; /* fuerza máxima */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.back-bubble:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+}
+/* ================= REPUESTOS (AISLADO) ================= */
+
+.repuestos-section .repuesto-card {
+  background: #f8fafc;
+  padding: 30px 25px;
+  border-radius: 20px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+  transition: all 0.3s ease;
+}
+
+.repuestos-section .repuesto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+.repuestos-section .repuesto-card img {
+  width: 100%;
+  height: 170px;          /* 🔑 MISMO ALTO */
+  object-fit: contain;
+  background: #fff;
+  border-radius: 16px;
+  border: 2px solid #e5e7eb;
+  padding: 6px;
+  margin-bottom: 15px;
+}
+/* ===== SECCIÓN TONER ===== */
+#toner-section {
+  background: #f8f9fa;
+}
+
+/* Card principal */
+#toner-section .area-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Carrusel */
+#toner-section .carousel-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cards inferiores */
+#toner-section .toner-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform .3s ease;
+}
+
+#toner-section .toner-card:hover {
+  transform: translateY(-6px);
+}
+
+#toner-section .toner-img-box img {
+  max-width: 120px;
+  margin-bottom: 15px;
+}
+/* ==============================
+   ESTILOS EXCLUSIVOS TINTAS
+============================== */
+
+#tintas-section .area-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== CARRUSEL TINTAS ===== */
+
+#tintas-section .carousel-inner {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 15px;
+}
+
+#tintas-section .carousel-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+}
+
+#tintas-section .carousel-img-wrapper img {
+  max-height: 260px;
+  max-width: 420px;
+  object-fit: contain;
+}
+
+
+
+/*FLECHAS CARRUSEL*/
+/* Flechas del carrusel */
+#tintas-section .carousel-control-prev,
+#tintas-section .carousel-control-next {
+  width: 12%;
+}
+
+#tintas-section .carousel-control-prev-icon,
+#tintas-section .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 50%;
+  padding: 14px;
+}
+/* Flechas del carrusel */
+#toner-section .carousel-control-prev,
+#toner-section .carousel-control-next {
+  width: 12%;
+}
+
+#toner-section .carousel-control-prev-icon,
+#toner-section .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 50%;
+  padding: 14px;
+}
+#unidad-fusora-section .carousel-control-prev,
+#unidad-fusora-section .carousel-control-next {
+  width: 12%;
+}
+
+#unidad-fusora-section .carousel-control-prev-icon,
+#unidad-fusora-section .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 50%;
+  padding: 14px;
+}
+
+#tarjetas-section .carousel-control-prev,
+#tarjetas-section .carousel-control-next {
+  width: 12%;
+}
+#tarjetas-section .carousel-control-prev-icon,
+#tarjetas-section .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 50%;
+  padding: 14px;
+}
+
+#mantenimiento-section .carousel-control-prev,
+#mantenimiento-section .carousel-control-next {
+  width: 12%;
+}
+#mantenimiento-section .carousel-control-prev-icon,
+#mantenimiento-section .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 50%;
+  padding: 14px;
+}
+
+#general-section .carousel-control-prev,
+#general-section .carousel-control-next {
+  width: 12%;
+}
+#general-section .carousel-control-prev-icon,
+#general-section .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 50%;
+  padding: 14px;
+}
+
+#tecnico-section .carousel-control-prev,
+#tecnico-section .carousel-control-next {
+  width: 12%;
+}
+#tecnico-section .carousel-control-prev-icon,
+#tecnico-section .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 50%;
+  padding: 14px;
+}
+#imagen-section .carousel-control-prev,
+#imagen-section .carousel-control-next {
+  width: 12%;
+}
+#imagen-section .carousel-control-prev-icon,
+#imagen-section .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 50%;
+  padding: 14px;
+}
+
+
+
+
+
+/* ===== LISTA ===== */
+
+#tintas-section .list-group-item {
+  border: none;
+  font-size: 16px;
+  padding-left: 0;
+}
+
+/* ===== TEXTO ===== */
+
+#tintas-section h1 {
+  font-weight: 700;
+}
+
+#tintas-section .lead {
+  color: #4b5563;
+}
+
+#tintas-section p {
+  color: #374151;
+}
+
+/* ===== BOTÓN ===== */
+
+#tintas-section .btn-success {
+  padding: 12px 30px;
+  font-size: 17px;
+  border-radius: 30px;
+}
+/* ==============================
+   RECARGAS DE TONER
+============================== */
+
+#recargas-toner-section .area-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+/* Imagen */
+#recargas-toner-section .recarga-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 15px;
+}
+
+#recargas-toner-section .recarga-img-box img {
+  max-height: 240px;
+  max-width: 420px;
+  object-fit: contain;
+}
+
+/* Texto */
+#recargas-toner-section .lead {
+  color: #4b5563;
+}
+
+#recargas-toner-section .list-group-item {
+  border: none;
+  font-size: 16px;
+  padding-left: 0;
+}
+
+/* Botón */
+#recargas-toner-section .btn-success {
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 17px;
+}
+
+
