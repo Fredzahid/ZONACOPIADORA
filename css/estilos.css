@@ -79,6 +79,26 @@
   border-radius: 10px;
 }
 /* ================= ZONAS ================= */
+/* Fondo exclusivo de las páginas principales de cada zona */
+body:has(> section.py-5.mt-5.bg-light) {
+  background: radial-gradient(
+    circle at center,
+    #b0003a 0%,
+    #8b002f 40%,
+    #6d0026 70%,
+    #4a001b 100%
+  );
+}
+
+body:has(> section.py-5.mt-5.bg-light) > section {
+  background-color: transparent !important;
+  color: #ffffff;
+}
+
+body:has(> section.py-5.mt-5.bg-light) > section.py-5.mt-5.bg-light .text-primary {
+  color: #ffffff !important;
+}
+
 .areas-section {
   background: #020617; 
   color: #ffffff;
@@ -145,6 +165,24 @@
   margin-bottom: 18px;
   display: inline-block;
   line-height: 1;
+}
+
+/* Imágenes exclusivas de las tarjetas de zonas */
+#areas .area-image {
+  height: 112px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+#areas .area-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 16px;
+  object-fit: cover;
 }
 
 
@@ -391,6 +429,84 @@
   color: #ffffff;
 }
 /* ================= REPUESTOS (AISLADO) ================= */
+
+body:has(> .repuestos-section) {
+  background: radial-gradient(
+    circle at center,
+    #b0003a 0%,
+    #8b002f 40%,
+    #6d0026 70%,
+    #4a001b 100%
+  );
+}
+
+body:has(> section.container.py-5 > .row.g-4 > .col-md-4 > a.area-card.h-100) {
+  background: radial-gradient(
+    circle at center,
+    #b0003a 0%,
+    #8b002f 40%,
+    #6d0026 70%,
+    #4a001b 100%
+  );
+}
+
+body:has(> section.container.py-5 > .row.g-4 > .col-md-4 > a.area-card.h-100) > section > .text-center h1,
+body:has(> section.container.py-5 > .row.g-4 > .col-md-4 > a.area-card.h-100) > section > .text-center .lead {
+  color: #ffffff;
+}
+
+body:has(> #tecnico-section) {
+  background: radial-gradient(
+    circle at center,
+    #b0003a 0%,
+    #8b002f 40%,
+    #6d0026 70%,
+    #4a001b 100%
+  );
+}
+
+body:has(> #tecnico-section) > #tecnico-section > .text-center h1,
+body:has(> #tecnico-section) > #tecnico-section > .text-center .lead {
+  color: #ffffff;
+}
+
+body:has(> .repuestos-section) > .repuestos-section > .text-center h1,
+body:has(> .repuestos-section) > .repuestos-section > .text-center .lead {
+  color: #ffffff;
+}
+
+body:has(> :is(
+  #unidad-fusora-section,
+  #imagen-section,
+  #tarjetas-section,
+  #general-section,
+  #mantenimiento-section
+)) {
+  background: radial-gradient(
+    circle at center,
+    #b0003a 0%,
+    #8b002f 40%,
+    #6d0026 70%,
+    #4a001b 100%
+  );
+}
+
+body:has(> :is(
+  #unidad-fusora-section,
+  #imagen-section,
+  #tarjetas-section,
+  #general-section,
+  #mantenimiento-section
+)) > section > .text-center h1,
+body:has(> :is(
+  #unidad-fusora-section,
+  #imagen-section,
+  #tarjetas-section,
+  #general-section,
+  #mantenimiento-section
+)) > section > .text-center .lead {
+  color: #ffffff;
+}
 
 .repuestos-section .repuesto-card {
   background: #f8fafc;
