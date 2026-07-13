@@ -691,6 +691,76 @@ body:has(> #toner-section) > #toner-section {
   padding: 14px;
 }
 
+/* ==============================
+   FONDO DECORATIVO PÁGINAS DETALLE
+============================== */
+
+body:has(.ficha-equipo) {
+  background: 
+    /* Puntos decorativos esquina superior izquierda */
+    radial-gradient(circle, #8b3a52 1px, transparent 1px),
+    radial-gradient(circle, #8b3a52 1px, transparent 1px),
+    radial-gradient(circle, #8b3a52 1px, transparent 1px),
+    radial-gradient(circle, #8b3a52 1px, transparent 1px),
+    radial-gradient(circle, #8b3a52 1px, transparent 1px),
+    radial-gradient(circle, #8b3a52 1px, transparent 1px),
+    /* Puntos decorativos esquina inferior derecha */
+    radial-gradient(circle, #8b3a52 1px, transparent 1px),
+    radial-gradient(circle, #8b3a52 1px, transparent 1px),
+    radial-gradient(circle, #8b3a52 1px, transparent 1px),
+    radial-gradient(circle, #8b3a52 1px, transparent 1px),
+    /* Forma vino esquina superior derecha */
+    linear-gradient(135deg, transparent 0%, transparent 85%, #8b3a52 85%, #8b3a52 100%),
+    /* Forma vino esquina inferior izquierda */
+    linear-gradient(45deg, #8b3a52 0%, #8b3a52 15%, transparent 15%, transparent 100%),
+    /* Ondas grises superiores */
+    radial-gradient(ellipse at 50% -10%, rgba(200, 200, 210, 0.3) 0%, transparent 40%),
+    radial-gradient(ellipse at 70% 0%, rgba(210, 210, 220, 0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 30% 5%, rgba(200, 210, 220, 0.2) 0%, transparent 60%),
+    /* Ondas grises inferiores */
+    radial-gradient(ellipse at 80% 90%, rgba(210, 210, 220, 0.25) 0%, transparent 50%),
+    /* Fondo base */
+    linear-gradient(to bottom, #f8f9fa, #ffffff) !important;
+  background-size: 
+    8px 8px,
+    15px 15px,
+    10px 12px,
+    12px 10px,
+    9px 11px,
+    11px 9px,
+    8px 8px,
+    15px 15px,
+    10px 12px,
+    12px 10px,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%;
+  background-position: 
+    25px 150px,
+    35px 165px,
+    30px 155px,
+    40px 170px,
+    28px 160px,
+    38px 168px,
+    calc(100% - 120px) calc(100% - 60px),
+    calc(100% - 110px) calc(100% - 50px),
+    calc(100% - 130px) calc(100% - 65px),
+    calc(100% - 100px) calc(100% - 40px),
+    100% 0%,
+    0% 0%,
+    0% -50px,
+    50% -20px,
+    20% -80px,
+    80% calc(100% + 100px),
+    0% 0%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 #tecnico-section .carousel-control-prev,
 #tecnico-section .carousel-control-next {
   width: 12%;
