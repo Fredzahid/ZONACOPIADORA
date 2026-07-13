@@ -696,6 +696,7 @@ body:has(> #toner-section) > #toner-section {
 ============================== */
 
 body:has(.ficha-equipo) {
+  min-height: 100vh;
   background: 
     /* Puntos decorativos esquina superior izquierda */
     radial-gradient(circle, #8b3a52 1px, transparent 1px),
