@@ -450,6 +450,10 @@ body:has(> section.container.py-5 > .row.g-4 > .col-md-4 > a.area-card.h-100) {
   );
 }
 
+body:has(> section.container.py-5 > .row.g-4 > .col-md-4 > a.area-card.h-100) > section.container.py-5 {
+  background: transparent !important;
+}
+
 body:has(> section.container.py-5 > .row.g-4 > .col-md-4 > a.area-card.h-100) > section > .text-center h1,
 body:has(> section.container.py-5 > .row.g-4 > .col-md-4 > a.area-card.h-100) > section > .text-center .lead {
   color: #ffffff;
@@ -534,8 +538,20 @@ body:has(> :is(
   margin-bottom: 15px;
 }
 /* ===== SECCIÓN TONER ===== */
+body:has(> #toner-section) > #toner-section {
+  background: transparent !important;
+}
+
 #toner-section {
-  background: #f8f9fa;
+  background: transparent;
+}
+
+#toner-section h1 {
+  color: #ffffff;
+}
+
+#toner-section .lead {
+  color: #ffffff;
 }
 
 /* Card principal */
@@ -711,11 +727,12 @@ body:has(> :is(
 /* ===== TEXTO ===== */
 
 #tintas-section h1 {
+  color: #ffffff;
   font-weight: 700;
 }
 
 #tintas-section .lead {
-  color: #4b5563;
+  color: #ffffff;
 }
 
 #tintas-section p {
@@ -758,8 +775,12 @@ body:has(> :is(
 }
 
 /* Texto */
+#recargas-toner-section h1 {
+  color: #ffffff;
+}
+
 #recargas-toner-section .lead {
-  color: #4b5563;
+  color: #ffffff;
 }
 
 #recargas-toner-section .list-group-item {
